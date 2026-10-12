@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "Veriq",
+    "slug": "veriq",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#0B1F3A"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.veriq.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Veriq needs camera access to capture legal documents."
+      }
+    },
+    "android": {
+      "package": "com.veriq.app",
+      "permissions": [
+        "CAMERA"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Veriq to access your camera to capture legal documents."
+        }
+      ],
+      "expo-sharing"
+    ]
+  }
+}
